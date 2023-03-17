@@ -4,8 +4,8 @@ import { changeColor, changeStyle } from '../actions/index';
 import '../styles/App.css';
 
 const App = () => {
-  const colorState = useSelector((state) => state.color);
-  const styleState = useSelector((state) => state.style);
+  const colorState = useSelector((state) => state.colorReducer);
+  const styleState = useSelector((state) => state.styleReducer);
   const dispatch = useDispatch();
 
   const handleColorChange = () => {
